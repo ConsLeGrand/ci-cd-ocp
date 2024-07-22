@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-              git branch: 'main', url: 'https://github.com/ConsLeGrand/ci-cd-ocp.git'
+              git 'https://github.com/ConsLeGrand/ci-cd-ocp.git'
             }
         }
         stage('Build image') {
