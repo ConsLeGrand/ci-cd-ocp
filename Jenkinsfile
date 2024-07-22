@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         REGISTRY = 'conslegrand312/ci-cd-ocp'
-        IMAGE_NAME = 'hello-world'
+        IMAGE_NAME = 'ci-cd-ocp'
         TAG = 'latest'
         OPENSHIFT_API_SERVER = 'https://api.ocp.heritage.africa:6443'
         OPENSHIFT_PROJECT = 'test'
