@@ -4,7 +4,7 @@ pipeline {
     environment {
         REGISTRY = 'conslegrand312/ci-cd-ocp'
         IMAGE_NAME = 'ci-cd-ocp'
-        args '-v /var/run/docker.sock:/var/run/docker.sock'
+        args = '-v /var/run/docker.sock:/var/run/docker.sock'
         TAG = 'latest'
         OPENSHIFT_API_SERVER = 'https://api.ocp.heritage.africa:6443'
         OPENSHIFT_PROJECT = 'test'
